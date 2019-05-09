@@ -75,6 +75,15 @@ body {
 .fas {
     margin: 5px 5px 5px 0;
 }
+.toast{
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  width: 200px;
+  .toast__text{
+    color: #DB5656;
+  }
+}
 
 @keyframes shake {
 

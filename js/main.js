@@ -2,7 +2,7 @@
 
 (function ($) {
     $(document).ready(function () {
-        // Code  
+        // Code
 
 
         $(".main__form").submit(function (event) {
@@ -10,11 +10,12 @@
                 correctLogin();
             } else {
                 wrongLogin();
+                $('.toast').toast('show')
             }
             event.preventDefault();
-            setTimeout(stopConfetti, 3000);
+            setTimeout(stopConfetti, 4000);
             setTimeout(resetColor, 2500);
-            setTimeout(resetVal, 2500);
+            setTimeout(resetVal, 500);
 
         });
 
