@@ -1,0 +1,104 @@
+body {
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    background: #00416A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #E4E5E6, #00416A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #E4E5E6, #00416A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    .container {
+        margin-top: 200px;
+
+        .main__form {
+            min-width: 320px !important;
+            padding: 20px;
+            border-radius: 5px;
+            background: #bdc3c7;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to top, #2c3e50, #bdc3c7);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to top, #2c3e50, #bdc3c7);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+            .form-group {
+                label {
+                    margin: 0 5px;
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    color: black;
+                    font-size: 14px;
+
+                    .label__ico {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 10px;
+                    }
+                }
+
+                .form-control {
+                    padding: 5px 5px;
+                    margin: 10px 0;
+                }
+
+                .form-text {
+                    padding: 5px 5px;
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}
+
+#confetti-canvas {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+
+}
+
+.error {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    //perspective: 1000px;
+}
+.btn{
+    margin: 10px 0 0 0;
+}
+.fas {
+    margin: 5px 5px 5px 0;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+#login{
+     filter: url(#login);
+}
